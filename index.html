@@ -1,111 +1,358 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TUGAS LAYOUT</title>
+        <title>Tugas Layout Week 3</title>
         <style>
+
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            .luar {
+                position: relative;
+                width: 1000px;
+                height: 700px;
+                margin: 20px auto;
+                background-color: rgba(240, 240, 255, 0.842);
+            }
+
+            .halfcol {
+                position: relative;
+                width: 47.5%;
+                height: 100%;
+                background-color: rgb(233, 227, 227); 
+                margin-right: 2.5%;
+                float: left;    
+            }
+            .halfcol:nth-child(even) {
+                margin-right: 0;
+                margin-left: 2.5%;
+            }
+
+            .fullcol {
+                position: relative;
+                width: 100%;
+                height: 10%;
+                margin-bottom: 10px;
+                background-color: rgb(104, 103, 103); 
+            }
+            .fullcol:nth-child(2) {
+                width: 90%;
+                height: 20%;
+                margin-left: 10%;
+                background-color: #ccc;
+            }
+
+            h1 {
+                position: relative;
+                width: 90%;
+                height: 80%;
+                text-align: left;
+                padding-left: 10px;
+                padding-top: 10px;
+                color: white;
+            }
+
+            .tabel_a {
+                position: relative;
+                width: 100%;
+                height: 45%;
+                background-color:rgba(140, 140, 141, 0.842); 
+                margin-bottom: 0.3%;
+                float: left;   
+            }
+            .tabel_a:nth-child(2) {
+                height: 54.7%;
+                margin-bottom: 0;
+            }
+
             .a {
-            position: relative; 
-            width: 137px;
-            height: 100px;
-            background-color:rgb(64, 163, 243);
-            margin-top: 15px;
-            margin-left: 25px;
-            float:left;
-            box-sizing: content-box;
-            display: block;
+                position: relative;
+                width: 19%;
+                margin-right: 0.3%;
+                height: 100%;
+                background-color: rgba(185, 185, 185, 0.849);
+                float: left;
+            }
+            .a:nth-child(even) {
+                margin-right: 0%;
             }
 
             .b {
-            position: relative;
-            width: 300px;
-            height: 100px;
-            background-color:rgb(64, 243, 124);
-            margin-top: 15px;
-            margin-left: 25px;
-            float:left;
-            box-sizing: content-box;
-            display: block;   
+                position: relative;
+                width: 61.1%;
+                margin-right: 0.3%;
+                height: 100%;
+                background-color: rgba(185, 185, 185, 0.849);
+                float: left;
+            }
+            
+            h2 {
+               position: relative;
+               color: white; 
+               float: left;
+               background-color: rgb(104, 103, 103);
+               width: 100%;
+               height: 100%;
+            }
+
+            h3 {
+                position: relative; 
+               float: left;
+               background-color: white;
+               width: 100%;
+               height: 100%;
+               margin: auto;
+            }
+
+            .ti {
+                position: relative;
+                width: 77.36%;
+                margin-left: 5%;
+                height: 63%;
+                background-color:#ccc;
+                float: left; 
             }
 
             .c {
-            position: relative;
-            width: 300px;
-            height: 120px;
-            background-color:rgb(110, 239, 248);
-            margin-top: 15px;
-            margin-left: 25px;
-            float:left; 
-            box-sizing: content-box;
-            display: block; 
+                position: relative;
+                width: 100%;
+                height: 19.1%;
+                margin-bottom: 1%;
+                background-color:rgba(185, 185, 185, 0.849);
+                float: left; 
+            }
+            .c:nth-child(even) {
+                position: relative;
+                width: 100%;
+                height: 80.8%;
+                background-color:rgba(185, 185, 185, 0.849);
+                float: left; 
+            }
+
+            h4 {
+                width: 100%;
+                height: 6.6%;
+                margin-bottom: 0;
+                color:greenyellow;
+            }
+
+            p {
+                width: 100%;
+                height: 6.6%;
+                margin-bottom: 0;
+            }
+
+            .half_width_content {
+                position: relative;
+                width: 50%;
+                height: 39%;
+                margin-bottom: 1%;
+                margin-left: 50%;
+                background-color:#ccc;
+                float: left; 
+            }
+
+            .btt {
+                position: relative;
+                width: 80%;
+                height: 20%;
+                margin-bottom: 5%;
+                margin-left: 20%;
+                background-color:rgba(185, 185, 185, 0.849);
+                float: left;
+            }
+
+            .btt:nth-child(2) {
+                height: 35%;
+            }
+
+            .btt:nth-child(3) {
+                height: 36.1%;
+                margin-bottom: 0;
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .routes {
+                position: relative;
+                width: 100%;
+                height: 56.1%;
+                background-color:#ccc;
+                float: left; 
             }
 
             .d {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            background-color:rgb(244, 255, 144);
-            margin-top: 15px;
-            margin-left: 25px;
-            float:left;
-            box-sizing: content-box;
-            display: block;   
+                position: relative;
+                width: 100%;
+                height: 17%;
+                margin-bottom: 3.5px;
+                background-color:rgba(185, 185, 185, 0.849);
+                float: left; 
+                margin-left: 0;
+            }
+            .d:nth-child(1) {
+                height: 10%;
             }
 
-            .e {
-            position: relative;
-            width: 300px;
-            height: 170px;
-            background-color:rgb(244, 255, 144);
-            margin-top: 45px;
-            margin-left: 25px;
-            float:left;
-            box-sizing: content-box;
-            display: block;   
+            .numbers {
+                position: relative;
+                width: 15%;
+                height: 100%;
+                background-color:rgb(104, 103, 103);
+                float: left; 
+                margin-right: 40px;
             }
 
-            .f {
-            position: relative;
-            width: 300px;
-            height: 140px;
-            background-color:rgb(244, 255, 144);
-            margin-top: 75px;
-            margin-left: 25px;
-            float:left; 
-            box-sizing: content-box;
-            display: block; 
+            .pw {
+                position: relative;
+                width: 35%;
+                height: 100%;
+                background-color:rgb(104, 103, 103);
+                float: left; 
+                margin-right: 100px;
             }
 
-            .g {
-            position: relative;
-            width: 300px;
-            height: 110px;
-            background-color:rgb(244, 255, 144);
-            margin-top: 105px;
-            margin-left: 25px;
-            float:left;
-            box-sizing: content-box;
-            display: block;
+            .icon {
+                position: relative;
+                width: 15%;
+                height: 100%;
+                background-color:rgb(104, 103, 103);
+                float: right; 
+                margin-right: 0px;
             }
-
         </style>
     </head>
     <body>
-        <div class="a"></div>
-        <div class="b"></div>
-        <div class="b"></div>
-        <div class="b"></div>
-        <div class="a"></div>
-        <div class="c"></div>
-        <div class="c"></div>
-        <div class="c"></div>
-        <div class="c"></div>
-        <div class="c"></div>
-        <div class="c"></div>
-        <div class="c"></div>
-        <div class="c"></div>
-        <div class="d"></div>
-        <div class="e"></div>
-        <div class="f"></div>
-        <div class="g"></div>
+        <div class="luar">
+
+            <div class="halfcol">
+
+                <div class="fullcol">
+                    <h1>Stand Departure Information</h1>
+                </div>
+
+                <div class="fullcol">
+                    <div class="tabel_a">
+                        <div class="a">
+                            <h2>Route No.</h2>
+                        </div>
+                        <div class="b">
+                            <h2>Location</h2>
+                        </div>
+                        <div class="a">
+                            <h2>Stand</h2>
+                        </div>
+                    </div>
+                    <div class="tabel_a">
+                        <div class="a">
+                            <h3>81, 82, 83, 84, 85</h3>
+                        </div>
+                        <div class="b">
+                            <h3>Perth Busport</h3>
+                        </div>
+                        <div class="a">
+                            <h3>9 - 12</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ti">
+                    <div class="c">
+                        <h1>Transperth Information</h1>
+                    </div>
+                    <div class="c">
+                        <h4>Call us</h4>
+                        <p>InfoLine on 13 62 13</p>
+                        <p>(TIS 13 14 50)</p>
+                        <h4>Hearing or speech impaired?</h4>
+                        <p>Call via NRS on 133 677</p>
+                        <h4>Visit an InfoCentre at:</h4>
+                        <p> Elizabeth Quay Bus Station</p>
+                        <p> Perth Busport</p>
+                        <p> Perth Station</p>
+                        <p> Perth Underground Station</p>
+                        <h4>Get an Iphone or Android device?</h4>
+                        <p> Download our free app now to help you plan</p>
+                        <p> your journey</p>
+                        <h4> Visit us online</h4>
+                        <p>transperth.we.gov.au</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="halfcol">
+
+                <div class="half_width_content">
+                    <div class="btt">
+                        <h2>Bus Timetable</h2>
+                    </div>
+                    <div class="btt">
+                        <h1>42</h1>
+                    </div>
+                    <div class="btt">
+                        <p>For full service details for these routes, refer to Timetable 43.</p>
+                    </div>
+                </div>
+
+                <div class="routes">
+                    <div class="d">
+                        <h2>Routes</h2>
+                    </div>
+                    <div class="d">
+                        <div class="numbers">
+                            <h1>81</h1>
+                        </div>
+                        <div class="pw">
+                            <h3>Perth - Wembley</p>
+                            <p>via Cambridge St</p>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="d">
+                        <div class="numbers">
+                            <h1>82</h1>
+                        </div>
+                        <div class="pw">
+                            <h3>Perth - Wembley</p>
+                            <p>via Cambridge St</p>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="d">
+                        <div class="numbers">
+                            <h1>83</h1>
+                        </div>
+                        <div class="pw">
+                            <h3>Perth - Wembley</p>
+                            <p>via Cambridge St</p>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="d">
+                        <div class="numbers">
+                            <h1>84</h1>
+                        </div>
+                        <div class="pw">
+                            <h3>Perth - Wembley</p>
+                            <p>via Cambridge St</p>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="d">
+                        <div class="numbers">
+                            <h1>85</h1>
+                        </div>
+                        <div class="pw">
+                            <h3>Perth - Wembley</p>
+                            <p>via Cambridge St</p>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>
