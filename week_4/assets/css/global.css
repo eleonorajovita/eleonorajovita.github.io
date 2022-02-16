@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.kiri {
+    position: relative;
+    width: 45%;
+    margin-right: 5%;
+    height: 100%;
+    float: left;
+}
+
+.kanan {
+    position: relative;
+    width: 45%;
+    margin-left: 5%;
+    height: 100%;
+    float: left;
+}
+
+.kiri .atas {
+    position: relative;
+    height: 35%;
+    width: 100%;
+}
+
+.kiri .bawah {
+    position: relative;
+    margin-top: 10%;
+    height: 55%;
+    width: 100%;
+}
+
+.kanan .atas {
+    position: relative;
+    height: 45%;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.kanan .bawah {
+    position: relative;
+    height: 55%;
+    width: 100%;
+}
+
+.isi {
+    width: 95%;
+    padding-left: 5%;
+}
+
+table.route_table {
+    border: 1px solid rgb(88, 87, 87);;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.route_table th {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    border: 1px solid rgb(88, 87, 87);;
+    padding: 5px;
+    text-align: left;
+    background-color:rgb(88, 87, 87);
+    color: white;
+    vertical-align: top;
+}
+
+table.route_table td {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    border: 1px solid rgb(88, 87, 87);;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.kiri .atas h2 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    padding: 15px;
+    background-color: rgb(88, 87, 87);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.kiri .bawah h3 {
+    color:rgb(4, 160, 51);
+    font-size:25px;
+}
+
+.kanan .atas h1 {
+    float: right;
+}
+
+.kanan .atas h2 {
+    float: right;
+    font-size: 120px;
+    vertical-align: top;
+}
+
+.kanan .atas p {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    background-color:lightsalmon;
+    float: right;
+}
+
+.kotak {
+    position: relative;
+    width: 80%;
+    height: 10%;
+    margin-left: 20%;
+    float: left;
+}
+
+.kotak:nth-child(2) {
+    height: 50%;
+}
+
+.kotak:nth-child(3) {
+    height: 30%;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+table.routes_table {
+    width: 90%;
+    margin-left: 10%;
+}
+
+table.routes_table td {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    padding: 3px;
+    vertical-align:middle;
+}
+
+.kanan .bawah h4 {
+    margin-left: 10%;
+    font-size: larger;
+}
+
+.c {
+    position: relative;
+    width: 100%;
+    height: 19.1%;
+    margin-bottom: 1%;
+    float: left; 
+}
+
+.bawah .isi .c h4 {
+    color:rgb(4, 160, 51);
+}
+
+@media (max-width: 500px) {
+    .main_container {
+        width: 90%;
+    }
+
+    .kiri {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+
+    .kanan {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+}
